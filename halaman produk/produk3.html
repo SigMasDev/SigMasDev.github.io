@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - Sigmas Dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Produk</h1>
+    <button id="back-button" class="fixed top-6 left-6 flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-gray-700 transition-all duration-300">
+      <span class="text-xl"></span>
+      <span>Kembali</span>
+    </button>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6">
+    <section class="bg-white rounded-2xl shadow p-6">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <img src="gambarproduk/produk3.jpg" alt="Gambar Produk" class="rounded-xl w-full">
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold mb-2">Jasa Pembuatan Website Profesional</h2>
+          <p class="text-gray-600 mb-4">Website custom untuk bisnis Anda, dibuat oleh tim profesional dari Sigmas Dev. Optimasi SEO, desain responsif, dan fitur lengkap sesuai kebutuhan Anda.</p>
+
+          <div class="mb-4">
+            <span class="text-xl font-bold text-blue-600">Rp595.000</span>
+            <span class="text-sm text-gray-500 line-through ml-2">Rp630.000</span>
+          </div>
+
+          <ul class="text-sm text-gray-700 space-y-1 mb-6">
+            <li>✅ Gratis domain & hosting tahun pertama</li>
+            <li>✅ Desain sesuai brand</li>
+            <li>✅ Admin panel mudah digunakan</li>
+            <li>✅ Support penuh 3 bulan</li>
+          </ul>
+
+          <a href="https://wa.me/+6283136221717" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition">Beli Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8 bg-white rounded-2xl shadow p-6">
+      <h3 class="text-xl font-semibold mb-4">Detail Produk</h3>
+      <p class="text-gray-700 mb-4">
+        Sigmas Dev menawarkan jasa pembuatan website yang dirancang secara profesional untuk meningkatkan kredibilitas dan performa bisnis Anda secara online. Kami menggunakan teknologi terkini, desain responsif, serta memastikan kecepatan dan keamanan situs Anda.
+      </p>
+      <p class="text-gray-700">
+        Setiap proyek dimulai dengan konsultasi mendalam agar kami memahami kebutuhan dan tujuan Anda. Setelah itu, tim kami akan mulai mendesain dan membangun website yang menarik dan fungsional. Kami juga memberikan training dan dokumentasi untuk pengelolaan situs.
+      </p>
+    </section>
+
+    <section class="mt-8 bg-white rounded-2xl shadow p-6">
+      <h3 class="text-xl font-semibold mb-4">Testimoni Pelanggan</h3>
+      <div id="reviews-list" class="space-y-4">
+        <div class="bg-gray-100 p-4 rounded-xl">
+          <p class="text-gray-700 italic">"Hasil websitenya keren banget dan timnya responsif. Project selesai tepat waktu!"</p>
+          <p class="text-sm text-gray-500 mt-2">— Andi, Pemilik Toko Online</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl">
+          <p class="text-gray-700 italic">"Desainnya elegan dan gampang banget dikelola. Recommended!"</p>
+          <p class="text-sm text-gray-500 mt-2">— Rina, Freelancer</p>
+        </div>
+      </div>
+      <form id="review-form" class="space-y-4 mt-6">
+        <div>
+          <label class="block text-sm font-medium">Nama</label>
+          <input type="text" id="reviewer-name" class="w-full border rounded-lg p-2 mt-1" placeholder="Nama Anda" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Rating</label>
+          <select id="reviewer-rating" class="w-full border rounded-lg p-2 mt-1">
+            <option value="5">5 - Sangat Puas</option>
+            <option value="4">4 - Puas</option>
+            <option value="3">3 - Cukup</option>
+            <option value="2">2 - Kurang</option>
+            <option value="1">1 - Sangat Buruk</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Komentar</label>
+          <textarea id="reviewer-comment" class="w-full border rounded-lg p-2 mt-1" rows="4" placeholder="Tulis ulasan Anda..." required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">Kirim Ulasan</button>
+      </form>
+    </section>
+
+    <section class="mt-8 bg-white rounded-2xl shadow p-6">
+      <h3 class="text-xl font-semibold mb-4">Pertanyaan yang Sering Diajukan</h3>
+      <div class="space-y-3">
+        <div>
+          <p class="font-medium">Apakah saya bisa request fitur khusus?</p>
+          <p class="text-sm text-gray-600">Tentu saja, kami terbuka untuk kustomisasi sesuai kebutuhan bisnis Anda.</p>
+        </div>
+        <div>
+          <p class="font-medium">Apakah harga sudah termasuk maintenance?</p>
+          <p class="text-sm text-gray-600">Harga sudah termasuk support dan perawatan ringan selama 3 bulan.</p>
+        </div>
+        <div>
+          <p class="font-medium">Berapa lama proses pembuatan website?</p>
+          <p class="text-sm text-gray-600">Umumnya antara 2 hingga 4 minggu tergantung kompleksitas fitur yang Anda minta.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-6">
+    &copy; 2025 Sigmas Dev. Semua hak dilindungi.
+  </footer>
+
+  <script>
+    const form = document.getElementById('review-form');
+    const nameInput = document.getElementById('reviewer-name');
+    const ratingInput = document.getElementById('reviewer-rating');
+    const commentInput = document.getElementById('reviewer-comment');
+    const reviewsList = document.getElementById('reviews-list');
+
+    const reviews = JSON.parse(localStorage.getItem('reviews') || '[]');
+
+    const renderReviews = () => {
+      reviewsList.innerHTML = '';
+      reviews.forEach(r => {
+        const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+        reviewsList.innerHTML += `
+          <div class="bg-gray-100 p-4 rounded-xl">
+            <p class="text-sm text-yellow-500 font-medium">${stars}</p>
+            <p class="text-gray-800 mt-1">${r.comment}</p>
+            <p class="text-sm text-gray-500 mt-1">— ${r.name}</p>
+          </div>
+        `;
+      });
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const newReview = {
+        name: nameInput.value.trim(),
+        rating: parseInt(ratingInput.value),
+        comment: commentInput.value.trim()
+      };
+      reviews.unshift(newReview);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+      renderReviews();
+      form.reset();
+    });
+
+    renderReviews();
+    document.getElementById("back-button").addEventListener("click", function () {
+    window.history.back();
+  });
+  </script>
+</body>
+</html>
